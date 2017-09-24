@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "699902003394",
+    "firebase_url": "https://restaurant-a5120.firebaseio.com",
+    "project_id": "restaurant-a5120",
+    "storage_bucket": "restaurant-a5120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699902003394:android:d902265eb495400e",
+        "android_client_info": {
+          "package_name": "com.example.dell.restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699902003394-scdm1ps9fehnu0a0b46c9ctd3hshd9vh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.restaurant",
+            "certificate_hash": "493793c98a26858926773babb7b573f1f10bfdd5"
+          }
+        },
+        {
+          "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkQ0L6CdmROfslVIRqxvdYXCgkC2NpXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699902003394:android:17a2cfb52bbd6e58",
+        "android_client_info": {
+          "package_name": "com.demo.dell.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699902003394-6m0ndea58b5iqf0hgastag542tdrpqgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demo.dell.firebasedemo",
+            "certificate_hash": "493793c98a26858926773babb7b573f1f10bfdd5"
+          }
+        },
+        {
+          "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkQ0L6CdmROfslVIRqxvdYXCgkC2NpXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699902003394:android:c66c38d5764b1c61",
+        "android_client_info": {
+          "package_name": "com.example.dell.sdl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699902003394-2bamftbj943ainu8kia3a6u6o8a1lrkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.sdl",
+            "certificate_hash": "493793c98a26858926773babb7b573f1f10bfdd5"
+          }
+        },
+        {
+          "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkQ0L6CdmROfslVIRqxvdYXCgkC2NpXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699902003394-c7a8k58ricu7jail9v8ncacu5861crgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

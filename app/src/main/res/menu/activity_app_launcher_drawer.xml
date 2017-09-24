@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_book_table"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="Book table" />
+        <item
+            android:id="@+id/nav_view_restaurant"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="View restaurants" />
+        <item
+            android:id="@+id/nav_cancel_order"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="Cancel order" />
+        <item
+            android:id="@+id/nav_order_details"
+            android:icon="@drawable/ic_more_horiz_black_24dp"
+            android:title="View order" />
+    </group>
+
+</menu>

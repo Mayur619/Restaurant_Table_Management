@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <layer-list android:opacity="transparent" android:autoMirrored="true"/>
+    <animation-list android:visible="true" android:oneshot="true"/>
+    <shape android:shape="oval" >
+        <gradient android:startColor="#3FF8FF" android:endColor="#F3E3FF"/>
+    </shape>
+</item>
+</selector>
