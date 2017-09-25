@@ -19,9 +19,10 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="0.30"
+            android:fontFamily="cursive"
             android:text="Category"
             android:textColor="@android:color/holo_blue_bright"
-            android:textSize="24sp" />
+            android:textSize="36sp" />
 
         <Spinner
             android:id="@+id/cat"
@@ -29,8 +30,7 @@
             android:layout_height="59dp"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
-            android:layout_weight="0.73"
-            android:spinnerMode="dialog" />
+            android:layout_weight="0.73" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,9 +43,10 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:fontFamily="cursive"
             android:text="Menu"
             android:textColor="@android:color/holo_blue_bright"
-            android:textSize="24sp" />
+            android:textSize="36sp" />
 
         <Spinner
             android:id="@+id/menu"
@@ -60,29 +61,35 @@
         android:id="@+id/add"
         android:layout_width="250dp"
         android:layout_height="75dp"
-        android:layout_marginTop="30dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="@drawable/buttonstyle"
-        android:text="Add item" />
+        android:fontFamily="cursive"
+        android:text="Add item"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/remove"
         android:layout_width="250dp"
         android:layout_height="75dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@drawable/buttonstyle"
-        android:text="Remove item" />
+        android:fontFamily="cursive"
+        android:text="Remove item"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/show"
         android:layout_width="250dp"
         android:layout_height="75dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@drawable/buttonstyle"
         android:elevation="50dp"
-        android:text="Show list" />
+        android:fontFamily="cursive"
+        android:text="Show list"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/reserve"
@@ -90,5 +97,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/nextstyle"
-        android:text="Reserve" />
+        android:fontFamily="cursive"
+        android:text="Reserve"
+        android:textSize="30sp" />
 </LinearLayout>

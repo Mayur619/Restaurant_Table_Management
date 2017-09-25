@@ -99,5 +99,9 @@ public class Registration extends AppCompatActivity {
                     }
                 });
     }
+    else
+        {
+            Toast.makeText(Registration.this,"You cannot enter blank usename/password",Toast.LENGTH_LONG).show();
+        }
 }
 }

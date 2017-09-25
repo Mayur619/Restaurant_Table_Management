@@ -3,6 +3,8 @@ package com.example.dell.sdl;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -15,6 +17,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -60,6 +63,7 @@ public class FoodSelection extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(FoodSelection.this,order_activity.class);
                 bundle.putLong("cost",cost);
+                bundle.putString("Activity","FoodSelection");
                 bundle.putStringArrayList("menu",selected_food);
                 intent.putExtras(bundle);
                 startActivity(intent);
@@ -73,13 +77,28 @@ public class FoodSelection extends AppCompatActivity {
         categories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                TextView t=((TextView) parent.getChildAt(0));
+                t.setTypeface(Typeface.create("cursive",Typeface.NORMAL));
+                t.setTextColor(Color.parseColor("#41FCFF"));
                 if(fetched)
                     FetchMenu(categories.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                FetchMenu(categories.getSelectedItem().toString());
+            }
+        });
+        menu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                TextView t=((TextView) parent.getChildAt(0));
+                t.setTypeface(Typeface.create("cursive",Typeface.NORMAL));
+                t.setTextColor(Color.parseColor("#41FCFF"));
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                FetchMenu(categories.getSelectedItem().toString());
+
             }
         });
         Button add = (Button) findViewById(R.id.add);
@@ -128,6 +147,9 @@ public class FoodSelection extends AppCompatActivity {
             list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    TextView t=((TextView) parent.getChildAt(0));
+                    t.setTypeface(Typeface.create("cursive",Typeface.NORMAL));
+                    t.setTextColor(Color.parseColor("#41FCFF"));
                     if(isRemove)
                         removeItem=position;
                     dialog.dismiss();
@@ -184,6 +206,7 @@ public class FoodSelection extends AppCompatActivity {
                     Cuisine = (String) map.get("Cuisine");
                     cats = Cuisine.split(",");
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, cats);
+                    adapter.setDropDownViewResource(R.layout.spinner_row);
                     categories.setAdapter(adapter);
                     Log.i("Cuisine:", Cuisine);
                     fetched = true;
@@ -212,7 +235,6 @@ public class FoodSelection extends AppCompatActivity {
                     DataSnapshot data=it.next();
                     item_cost.put(data.getKey(),data.getValue());
                     menuItems.add(data.getKey());
-                    holder Holder=new holder();
                     /*Holder.setName(data.getKey());
                     Holder.setCost((Long) data.getValue());
                     Log.i(Holder.getName(), String.valueOf(Holder.getCost()));
@@ -222,6 +244,7 @@ public class FoodSelection extends AppCompatActivity {
                 }
 
                 ArrayAdapter<String> menu_adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,menuItems);
+                menu_adapter.setDropDownViewResource(R.layout.spinner_row);
                 menu.setAdapter(menu_adapter);
             }
 

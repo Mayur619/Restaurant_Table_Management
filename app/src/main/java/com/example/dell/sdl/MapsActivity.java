@@ -46,7 +46,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
         {
             checkLocationPermission();
         }

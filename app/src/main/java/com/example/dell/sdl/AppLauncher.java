@@ -91,9 +91,19 @@ public class AppLauncher extends AppCompatActivity
         if (id == R.id.nav_book_table) {
            startActivity(new Intent(getApplicationContext(),Login.class));
         } else if (id == R.id.nav_cancel_order) {
-
+            Intent in=new Intent(AppLauncher.this,OrderId.class);
+            Bundle bundle=new Bundle();
+            bundle.putString("action","cancel");
+            bundle.putString("Activity","AppLauncher");
+            in.putExtras(bundle);
+            startActivity(in);
         } else if (id == R.id.nav_order_details) {
-
+            Intent in=new Intent(AppLauncher.this,OrderId.class);
+            Bundle bundle=new Bundle();
+            bundle.putString("action","details");
+            bundle.putString("Activity","AppLauncher");
+            in.putExtras(bundle);
+            startActivity(in);
         } else if (id == R.id.nav_view_restaurant) {
             Intent in=new Intent(AppLauncher.this,Filter.class);
             Bundle bundle=new Bundle();

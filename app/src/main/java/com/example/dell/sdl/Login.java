@@ -1,15 +1,15 @@
 package com.example.dell.sdl;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.EditText;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.content.Intent;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -66,6 +66,8 @@ public class Login extends AppCompatActivity {
     {
         String user=username.getText().toString().trim();
         String pass=password.getText().toString().trim();
+        if(!(TextUtils.isEmpty(user)||TextUtils.isEmpty(pass)))
+        {
         mAuth.signInWithEmailAndPassword(user, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -84,5 +86,8 @@ public class Login extends AppCompatActivity {
                         // ...
                     }
                 });
+        }
+        else
+            Toast.makeText(Login.this,"Invalid username/password",Toast.LENGTH_LONG).show();
     }
 }

@@ -44,6 +44,7 @@ public class RestDetailsActivity extends AppCompatActivity {
         String temp1=bundle.getString("res_name");
         temp1=temp1.toLowerCase();
         temp1=temp1.replace(" ","_");
+        temp1=temp1.replace("'","_");
         Resources r=getResources();
         int rid=r.getIdentifier(temp1,"drawable",getPackageName());
         img.setImageResource(rid);

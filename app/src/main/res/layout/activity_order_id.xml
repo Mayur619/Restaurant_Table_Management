@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_weight="1"
+            android:textColorHint="#54F5FF"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:hint="Order ID"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nextstyle"
+        android:fontFamily="cursive"
+        android:textSize="36sp" />
+
+</LinearLayout>
